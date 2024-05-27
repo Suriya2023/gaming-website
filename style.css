@@ -365,13 +365,13 @@ body {
     margin-block-end: 90px;
 }
 
-.upcoming-card {
+.upcomingcard {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.upcoming-card::before {
+.upcomingcard::before {
     top: 50%;
     background-image: linear-gradient(to right bottom, hsl(299, 100%, 52%), hsl(291, 100%, 58%), hsl(283, 100%, 60%), hsl(273, 100%, 62%), hsl(262, 100%, 63%), hsl(242, 100%, 69%), hsl(223, 100%, 62%), hsl(210, 100%, 50%), hsl(203, 100%, 50%), hsl(198, 100%, 50%), hsl(192, 100%, 48%), hsl(185, 90%, 48%));
     transform: translateY(-50%);
@@ -382,31 +382,31 @@ body {
     border-radius: 5px;
 }
 
-.upcoming-card.left::before {
+.upcomingcard.left::before {
     right: 0;
     clip-path: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
 }
 
-.upcoming-card.right::before {
+.upcomingcard.right::before {
     left: 0;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
 }
 
-.upcoming-card .card-title {
+.upcomingcard .card-title {
     text-transform: uppercase;
 }
 
-.upcoming-card.left .card-title {
+.upcomingcard.left .card-title {
     margin-inline-end: 50px;
     text-align: right;
 }
 
-.upcoming-card.right .card-title {
+.upcomingcard.right .card-title {
     margin-inline-start: 50px;
     text-align: left;
 }
 
-.upcoming-card .card-meta {
+.upcomingcard .card-meta {
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -420,19 +420,19 @@ body {
     border-radius: 3px;
 }
 
-.upcoming-card.left .card-meta {
+.upcomingcard.left .card-meta {
     clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
 }
 
-.upcoming-card.right .card-meta {
+.upcomingcard.right .card-meta {
     clip-path: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
 }
 
-.upcoming-card .card-banner {
+.upcomingcard .card-banner {
     width: 30%;
 }
 
-.upcoming-card.right .card-banner {
+.upcomingcard.right .card-banner {
     order: 1;
 }
 
@@ -724,12 +724,12 @@ body {
 
 
 
-    .upcoming-card.left .card-meta {
+    .upcomingcard.left .card-meta {
         left: auto;
         right: -15%;
     }
 
-    .upcoming-card.right .card-meta {
+    .upcomingcard.right .card-meta {
         left: 25%;
     }
 
@@ -792,24 +792,24 @@ body {
 * UPCOMING
 */
 
-    .upcoming-card::before {
+    .upcomingcard::before {
         height: 110px;
     }
 
-    .upcoming-card .card-meta {
+    .upcomingcard .card-meta {
         padding-block: 12px;
         bottom: 20px;
     }
 
-    .upcoming-card .card-title {
+    .upcomingcard .card-title {
         --fontSize-3: 2.8rem;
     }
 
-    .upcoming-card.left .card-meta {
+    .upcomingcard.left .card-meta {
         right: -10%;
     }
 
-    .upcoming-card.right .card-meta {
+    .upcomingcard.right .card-meta {
         left: 20%;
     }
 
@@ -829,9 +829,6 @@ body {
 
 
 
-    /**
-* CUSTOM CURSOR
-*/
 
     .cursor {
         display: block;
@@ -943,17 +940,22 @@ body {
         margin-block: 0;
     }
 
-    .upcoming-card .card-meta {
+    .upcomingcard .card-meta {
         left: 50%;
         bottom: -30px;
         transform: translateX(-50%);
     }
 
-    .upcoming-card.right .card-meta {
+    .upcomingcard.right .card-meta {
         left: 50%;
     }
-
-
+    .upcomingcard.show{
+        transform: 0;
+    }
+    .upcomingcard{
+        transform: translateX(-400%);
+        transition: all .3s ease;
+    }
 
 
     .news-list {
@@ -1007,20 +1009,20 @@ body {
 
 
 
-    .upcoming-card .card-banner {
+    .upcomingcard .card-banner {
         max-height: 180px;
         width: auto;
     }
 
-    .upcoming-card .card-meta {
+    .upcomingcard .card-meta {
         bottom: 0;
     }
 
-    .upcoming-card.right .card-meta {
+    .upcomingcard.right .card-meta {
         left: 35%;
     }
 
-    .upcoming-time .time {
+    .upcomingtime .time {
         --fontSize-1: 6.2rem;
     }
 

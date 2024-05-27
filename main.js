@@ -1,10 +1,27 @@
 
+var offsetX = document.querySelectorAll(".upcomingcard");
+window.addEventListener("scroll", Suraj);
+Suraj()
+
+function Suraj() {
+    var b = window.innerHeight / 1 * 1
+    offsetX.forEach(upcomingcard => {
+        var c = upcomingcard.getBoundingClientRect().top;
+        if (a < b) {
+            upcomingcard.classList.add("show");
+
+        } else {
+            upcomingcard.classList.remove("show");
+        }
+);
+
+}
 
 
 
 
 
-const addEventOnElements = function (elements, eventType, callback) {
+function addEventOnElements(elements, eventType, callback) {
     for (let i = 0, len = elements.length; i < len; i++) {
         elements[i].addEventListener(eventType, callback);
     }
@@ -104,3 +121,6 @@ addEventOnElements(hoverElements, "mouseover", function () {
 addEventOnElements(hoverElements, "mouseout", function () {
     cursor.classList.remove("hovered");
 });
+
+
+
