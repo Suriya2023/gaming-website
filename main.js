@@ -8,10 +8,10 @@ function Suraj() {
     offsetX.forEach(upcomingcard => {
         var c = upcomingcard.getBoundingClientRect().top;
         if (a < b) {
-            upcomingcard.classList.add("show");
+            upcomingcard.classList.add('show');
 
         } else {
-            upcomingcard.classList.remove("show");
+            upcomingcard.classList.remove('show');
         }
 );
 
