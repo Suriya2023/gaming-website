@@ -1,21 +1,4 @@
 
-var offsetX = document.querySelectorAll(".upcomingcard");
-window.addEventListener("scroll", Suraj);
-Suraj()
-
-function Suraj() {
-    var b = window.innerHeight / 1 * 1
-    offsetX.forEach(upcomingcard => {
-        var c = upcomingcard.getBoundingClientRect().top;
-        if (a < b) {
-            upcomingcard.classList.add('show');
-
-        } else {
-            upcomingcard.classList.remove('show');
-        }
-);
-
-}
 
 
 
